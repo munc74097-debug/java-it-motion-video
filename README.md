@@ -1,14 +1,35 @@
-# JAVA IT // MUN2ASIR — 30s Full-Stack Skill Map Motion Video
+# JAVA IT // MUN2ASIR — 30s Full-Stack Skill Map Motion Design Video
 
-Procedural 1080p60 Motion Design & Cartographic Skill Map Video built in Python (`NumPy`, `OpenCV`, `Pillow`, `SciPy`, `FFmpeg`) for **JAVA IT (by MUN2ASIR)**.
+Procedural **Full HD (`1920×1080` @ `60 FPS`) Motion Design & Cartographic Skill Map Video** built in Python (`NumPy`, `OpenCV`, `Pillow`, `SciPy`, `FFmpeg`) for **JAVA IT (by MUN2ASIR)**.
 
-## Features
-- **30-Second Full HD (`1920x1080` @ `60 FPS`) Motion Design Video**
-- **Luxury Gold & Obsidian Tech Theme**
-- **Cartographic Skill Map**: Displays Frontend, Backend, Database, and Cloud technologies as interactive-style Map Location Pins (`📍`) connected by animated GPS routes.
-- **Procedural Stereo Audio Engine (`generate_audio_30s.py`)**: Synthesizes a 96 BPM electronic soundtrack with GPS sonar pings, basslines, pads, and transitions.
+- **Rendered Video**: [`java_it_mun2asir_30s_skill_map.mp4`](./java_it_mun2asir_30s_skill_map.mp4)
+- **Visual Theme**: Luxury Gold (`#FFBA0C`), Crimson Amber (`#FF4020`), and Deep Obsidian (`#08090E`)
 
-## Quick Start
+---
+
+## Scene Previews
+
+### 1. Brand & Architect Intro
+![Scene 1 Intro](./previews/map30s_scene1_boot.png)
+
+### 2. Full-Stack Web Manifesto
+![Scene 2 Manifesto](./previews/map30s_scene2_manifesto.png)
+
+### 3. Frontend Skill Map (`HTML5 • CSS3 • Tailwind • JS • TS • React • Vue • Next.js`)
+![Scene 3 Frontend Map](./previews/map30s_scene3_frontend_map.png)
+
+### 4. Backend, Database & Cloud Skill Map (`Node.js • Python • Django • PHP • Laravel • Java • Spring • SQL • MongoDB • Docker • AWS`)
+![Scene 4 Backend Map](./previews/map30s_scene4_backend_map.png)
+
+### 5. Complete Full-Stack Skill Network Linked to JAVA IT HQ
+![Scene 5 Global Map](./previews/map30s_scene5_global_map.png)
+
+### 6. Finale & Custom Logo Lockup
+![Scene 6 Finale](./previews/map30s_scene6_finale.png)
+
+---
+
+## Quick Start (Render Locally)
 
 ```bash
 # 1. Install dependencies
@@ -17,7 +38,7 @@ pip install -r requirements.txt
 # 2. Download required Google Fonts
 ./download_fonts.sh
 
-# 3. Generate the 30-second stereo soundtrack
+# 3. Synthesize the 30-second stereo soundtrack
 python3 generate_audio_30s.py
 
 # 4. Render the 30-second 1080p60 MP4 video

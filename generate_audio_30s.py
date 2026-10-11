@@ -233,7 +233,7 @@ def build_soundtrack_30s():
     if peak > 0:
         mix = mix / peak * 0.89
 
-    sf.write("/home/user/soundtrack_30s.wav", mix, SR, subtype='PCM_16')
+    sf.write("soundtrack_30s.wav", mix, SR, subtype='PCM_16')
     print(f"30s Soundtrack generated: {DURATION}s, {SR}Hz, peak={np.max(np.abs(mix)):.3f}")
 
 if __name__ == "__main__":

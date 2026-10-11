@@ -31,7 +31,7 @@ C_CRIMSON   = (255, 64, 32)      # #FF4020 High-Energy Amber/Crimson
 C_COBALT    = (24, 98, 255)      # #1862FF Enterprise Tech Blue
 C_CYAN      = (0, 229, 255)      # #00E5FF Cyber Cyan
 
-FONT_DIR = "/home/user/assets/fonts"
+FONT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "fonts") if os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "fonts")) else "/home/user/assets/fonts"
 
 # ==============================================================================
 # EASING & MATH UTILITIES
@@ -762,9 +762,9 @@ def render_scene_6(canvas, f):
 def main():
     t0 = time.time()
     ffmpeg_exe = imageio_ffmpeg.get_ffmpeg_exe()
-    raw_mp4 = "/home/user/java_it_30s_raw.mp4"
-    final_mp4 = "/home/user/java_it_mun2asir_30s_skill_map.mp4"
-    audio_wav = "/home/user/soundtrack_30s.wav"
+    raw_mp4 = "java_it_30s_raw.mp4"
+    final_mp4 = "java_it_mun2asir_30s_skill_map.mp4"
+    audio_wav = "soundtrack_30s.wav"
 
     cmd = [
         ffmpeg_exe,
@@ -801,7 +801,7 @@ def main():
         1420: "map30s_scene5_global_map.png",
         1640: "map30s_scene6_finale.png"
     }
-    os.makedirs("/home/user/previews", exist_ok=True)
+    os.makedirs("previews", exist_ok=True)
 
     for f in range(TOTAL_FRAMES):
         if f < 240:
@@ -844,7 +844,7 @@ def main():
     ], check=True, stderr=subprocess.DEVNULL)
     os.remove(raw_mp4)
 
-    shutil.copyfile(final_mp4, "/home/user/mun2asir_java_it_reel_1080p.mp4")
+    
 
     total_time = time.time() - t0
     size_mb = os.path.getsize(final_mp4) / (1024 * 1024)
